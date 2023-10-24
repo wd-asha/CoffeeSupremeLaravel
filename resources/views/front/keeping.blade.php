@@ -152,9 +152,6 @@
 
         </div>
 
-
    </div>
-
-
-
+</div>
 @endsection
