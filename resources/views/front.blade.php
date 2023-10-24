@@ -333,7 +333,7 @@
                         <h4 class="post-title">{{ $post->post_title }}</h4>
                     </a>
                     <div class="post-text_header">
-                        <div class="post-text_header_left">{{ $post->created_at }}</div>
+                        <div class="post-text_header_left">{{ \Carbon\Carbon::parse($post->created_at)->diffForHumans() }}</div>
                         <div class="post-text_header_right">{{ $post->rubric->rubric_title }}</div>
                     </div>
                     <div class="post-text">

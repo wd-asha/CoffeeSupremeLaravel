@@ -31,17 +31,19 @@
 
             <div class="posts">
                 <div class="latest">
-                    <h3>Latest Journal Posts</h3>
-                    <p>Here’s a taste of the freshest posts from our Journal</p>
-
+                    <div class="latest_text">
+                        <h3>Latest Journal Posts</h3>
+                        <p>Here’s a taste of the freshest posts from our Journal</p>
+                    </div>
+                    <div class="latest_form">
                     {{-- Search filter --}}
                     <form action="{{route('front.journal')}}" method="get" class="mr-4">
                         @csrf
-                        <input type="text" name="search_field" class="mb-4 mr-2" placeholder="What will look for..." style="width: 10rem;">
-                        <button type="submit" class="btn btn-primary">Search</button>
+                        <input type="text" name="search_field" class="mb-4 mr-2" placeholder="What will look for...">
+                        <button type="submit" class="btn btn-primary latest_btn"><i class="fa fa-search"></i></button>
                     </form>
                     {{-- end search filter --}}
-
+                    </div>
                 </div>
 
                 @foreach($posts as $post)
@@ -54,7 +56,7 @@
                                 <h4 class="post-title">{{ $post->post_title }}</h4>
                             </a>
                             <div class="post-text_header">
-                                <div class="post-text_header_left">{{ $post->created_at }}</div>
+                                <div class="post-text_header_left">{{ \Carbon\Carbon::parse($post->created_at)->diffForHumans() }}</div>
                                 <div class="post-text_header_right">{{ $post->rubric->rubric_title }}</div>
                             </div>
                             <div class="post-text">

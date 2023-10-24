@@ -54,7 +54,7 @@
                 <h4>Quantity:</h4>
                 <div class="quantity">
                     <div class="quantity-item" id="quantity">1</div>
-                    <div class="quantity-item"></div>
+                    <div class="quantity-item" style="opacity: 0; cursor: default;"></div>
                     <div class="quantity-item quantity-has-select">+</div>
                     <div class="quantity-item quantity-has-select">-</div>
                 </div>

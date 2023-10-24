@@ -164,9 +164,10 @@
 .swiper-button-next,
 .swiper-button-prev {
     padding: 1.33rem .8rem !important;
-    color: #c79064 !important;
-    border: 1px solid #c79064 !important;
+    color: #c08357 !important;
+    border: 1px solid #c08357 !important;
     width: .33rem !important;
+    background-color: #fcf8e3;
 }
 
 .filtersContent {
