@@ -1,0 +1,232 @@
+.breadcrumbs {
+    padding: 2rem 0;
+}
+
+h6 {
+
+    border-top: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+    padding: .33rem;
+    display: inline-block;
+}
+
+h6 a,
+h6 span {
+    font-size: .9rem;
+    color: rgba(70, 70, 70, .66);
+    text-decoration: none;
+    transition: .5s;
+}
+
+h6 i {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: rgba(70, 70, 70, .5);
+    cursor: default;
+    padding: .5rem;
+    transform: translateY(.1rem);
+}
+
+h6 a:hover {
+    color: #D22226;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: 'Knockout-27', sans-serif;
+    text-transform: uppercase;
+    color: rgba(70, 70, 70, .9);
+    width: 100%;
+    padding: 1rem 0 0 0;
+    letter-spacing: .03rem;
+}
+
+.main {
+    width: 100%;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-areas:
+    "prelude   preludeText   preludeText"
+    "beginning beginningText beginningText"
+    "melbourne melbourneText melbourneText"
+    "hopper    hopperText    hopperText"
+    "auckland  aucklandText  aucklandText"
+    "shaken    shakenText    shakenText"
+    "future   futureText     futureText" ;
+    border-top: 1px solid rgba(70, 70, 70, .2);
+}
+
+.prelude {
+    grid-area: prelude;
+    padding: 2.5rem;
+    text-align: right;
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+}
+
+.beginning {
+    grid-area: beginning;
+    padding: 2.5rem;
+    text-align: right;
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+}
+
+.melbourne {
+    grid-area: melbourne;
+    padding: 2.5rem;
+    text-align: right;
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+}
+
+.hopper {
+    grid-area: hopper;
+    padding: 2.5rem;
+    text-align: right;
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+}
+
+.auckland {
+    grid-area: auckland;
+    padding: 2.5rem;
+    text-align: right;
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+}
+
+.shaken {
+    grid-area: shaken;
+    padding: 2.5rem;
+    text-align: right;
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+}
+
+.future {
+    grid-area: future;
+    padding: 2.5rem;
+    text-align: right;
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+}
+
+.prelude-text h3,
+.beginning-text h3,
+.melbourne-text h3,
+.hopper-text h3,
+.auckland-text h3,
+.shaken-text h3,
+.future-text h3 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: rgba(70, 70, 70, 1);
+    letter-spacing: .03rem;
+    padding-bottom: .33rem;
+}
+
+.prelude-text {
+    grid-area: preludeText;
+    padding: 2.5rem;
+    border-left: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+    column-count: 2;
+    column-gap: 5rem;
+    column-rule: 1px solid rgba(200, 200, 200, 1);
+}
+
+.beginning-text {
+    grid-area: beginningText;
+    padding: 2.5rem;
+    border-left: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+    column-count: 2;
+    column-gap: 5rem;
+    column-rule: 1px solid rgba(200, 200, 200, 1);
+}
+
+.melbourne-text {
+    grid-area: melbourneText;
+    padding: 2.5rem;
+    border-left: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+    column-count: 2;
+    column-gap: 5rem;
+    column-rule: 1px solid rgba(200, 200, 200, 1);
+}
+
+.hopper-text {
+    grid-area: hopperText;
+    padding: 2.5rem;
+    border-left: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+    column-count: 2;
+    column-gap: 5rem;
+    column-rule: 1px solid rgba(200, 200, 200, 1);
+}
+
+.auckland-text {
+    grid-area: aucklandText;
+    padding: 2.5rem;
+    border-left: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+    column-count: 2;
+    column-gap: 5rem;
+    column-rule: 1px solid rgba(200, 200, 200, 1);
+}
+
+.shaken-text {
+    grid-area: shakenText;
+    padding: 2.5rem;
+    border-left: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+    column-count: 2;
+    column-gap: 5rem;
+    column-rule: 1px solid rgba(200, 200, 200, 1);
+}
+
+.future-text {
+    grid-area: futureText;
+    padding: 2.5rem;
+    border-left: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+    column-count: 2;
+    column-gap: 5rem;
+    column-rule: 1px solid rgba(200, 200, 200, 1);
+}
+
+.prelude p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: rgba(70, 70, 70, 1);
+    font-weight: 600;
+}
+
+.prelude-text p,
+.beginning-text p,
+.melbourne-text p,
+.hopper-text p,
+.auckland-text p,
+.shaken-text p,
+.future-text p {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    color: rgba(70, 70, 70, 1);
+    padding-top: .66rem;
+}
+
+.prelude-text p:first-child,
+.beginning-text p:first-child,
+.melbourne-text p:first-child,
+.hopper-text p:first-child,
+.auckland-text p:first-child,
+.shaken-text p:first-child,
+.future-text p:first-child {
+    padding-top: 0;
+}
+
+.prelude img,
+.beginning img,
+.melbourne img,
+.hopper img,
+.auckland img,
+.shaken img,
+.future img {
+    width: 100%;
+}

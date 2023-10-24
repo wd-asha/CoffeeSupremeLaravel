@@ -1,0 +1,148 @@
+.breadcrumbs {
+    padding: 2rem 0;
+}
+
+h6 {
+
+    border-top: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+    padding: .33rem;
+    display: inline-block;
+}
+
+h6 a,
+h6 span {
+    font-size: .9rem;
+    color: rgba(70, 70, 70, .66);
+    text-decoration: none;
+    transition: .5s;
+}
+
+h6 i {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: rgba(70, 70, 70, .5);
+    cursor: default;
+    padding: .5rem;
+    transform: translateY(.1rem);
+}
+
+h6 a:hover {
+    color: #D22226;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: 'Knockout-27', sans-serif;
+    text-transform: uppercase;
+    color: rgba(70, 70, 70, .9);
+    width: 100%;
+    padding: 1rem 0 0 0;
+    letter-spacing: .03rem;
+}
+
+.contacts {
+    width: 100%;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-areas:
+            "emptyBox contactsText contactsText"
+            "contact1 contact2 contact3";
+    border-top: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+}
+
+.empty-box {
+    grid-area: emptyBox;
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+}
+
+.contact1 {
+    grid-area: contact1;
+    padding: 2.5rem 2.5rem 2.5rem 0;
+}
+
+.contact2 {
+    grid-area: contact2;
+    padding: 2.5rem;
+    border-left: 1px solid rgba(70, 70, 70, .2);
+}
+
+.contact3 {
+    grid-area: contact3;
+    padding: 2.5rem 0 2.5rem 2.5rem;
+    border-left: 1px solid rgba(70, 70, 70, .2);
+}
+
+.contact1:last-child,
+.contact2:last-child,
+.contact3:last-child {
+    padding-bottom: 0;
+}
+
+.contact1 h3,
+.contact2 h3,
+.contact3 h3 {
+    font-size: 2rem;
+    font-family: 'Knockout-27', sans-serif;
+    text-transform: uppercase;
+    color: rgba(70, 70, 70, .9);
+    width: 100%;
+    padding: 1rem 0 1.33rem 0;
+    letter-spacing: .03rem;
+}
+
+.contact1 h4,
+.contact2 h4,
+.contact3 h4,
+.contacts-text h4 {
+    font-size: 1rem;
+    color: rgba(70, 70, 70, .8);
+    text-transform: uppercase;
+    letter-spacing: .02rem;
+    padding: .66rem 0 .66rem 0;
+}
+
+.contact1 p,
+.contact2 p,
+.contact3 p,
+.contacts-text p {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    padding-bottom: .66rem;
+}
+
+.contact p:last-child {
+    padding-bottom: 0;
+}
+
+.contacts-text {
+    grid-area: contactsText;
+    padding: 2.5rem;
+    border-left: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+}
+
+.btn-box {
+    width: 100%;
+    margin: 2.5rem auto 0 auto;
+}
+
+.btn-cart {
+    box-sizing: border-box;
+    width: 100%;
+    padding: .6rem 0;
+    text-transform: uppercase;
+    font-size: .8rem;
+    line-height: 1.2rem;
+    background-color: rgba(210, 34, 38, 1);
+    transition: .5s;
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,176 @@
+.menu-panel {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 2rem 3rem 3rem 0;
+    background-color: white;
+    transform: translate(-100%, 100%);
+    z-index: 20;
+    border-top: 1px solid rgba(70, 70, 70, .2);
+    border-right: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+    width: 25%;
+    transition: .5s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.menu-panel-show {
+    transform: translate(0, 100%);
+    opacity: 1;
+}
+
+.menu-panel_item {
+    width: 100%;
+    position: relative;
+}
+
+.menu-panel_item a {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: .9rem;
+    color: rgba(70, 70, 70, 1);
+    text-decoration: none;
+    transition: .5s;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.menu-panel_item a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 2px;
+    width: 0;
+    background-color: #D22226;
+    transition: .5s;
+}
+
+.menu-panel_item a:hover {
+    color: #D22226
+}
+
+.menu-panel_item a:hover:after {
+    width: 100%;
+}
+
+.menu-panel_item span {
+    display: inline-block;
+}
+
+.menu-panel_item i {
+    /*margin-left: 5rem;*/
+}
+
+.menu-panel i.back {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: rgba(70, 70, 70, .66);
+    cursor: pointer;
+    transition: .5s;
+    text-align: right;
+    display: block;
+    width: 100%;
+}
+
+.menu-panel i.back:hover {
+    color: #D22226;
+    transform: translateX(-1%);
+}
+
+.coffee-panel,
+.equipment-panel {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 2rem 3rem 3rem 3rem;
+    background-color: white;
+    width: 25%;
+    transition: .5s;
+    transform: translate(0, 100%);
+    z-index: 15;
+    border-top: 1px solid rgba(70, 70, 70, .2);
+    border-right: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.coffee-panel {
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+.coffee-panel-show,
+.equipment-panel-show {
+    opacity: 1;
+    transform: translate(100%, 100%);
+    pointer-events: auto;
+}
+
+.coffee-panel_item a,
+.equipment-panel_item a {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: .9rem;
+    color: rgba(70, 70, 70, 1);
+    text-decoration: none;
+    transition: .5s;
+    text-transform: none;
+    font-weight: 600;
+    display: flex;
+    padding: .5rem 0 .5rem 0;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.coffee-panel_item a:first-child,
+.equipment-panel_item a:first-child {
+    font-size: .9rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+    padding: 1rem 0 1rem 0;
+    position: relative;
+}
+
+.coffee-panel_item a:first-child:after,
+.equipment-panel_item a:first-child:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 2px;
+    width: 0;
+    background-color: #D22226;
+    transition: .5s;
+}
+
+.coffee-panel_item a:first-child:hover:after,
+.equipment-panel_item a:first-child:hover:after{
+    width: 100%;
+}
+
+.coffee-panel_item p,
+.equipment-panel_item p {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: .9rem;
+    color: rgba(70, 70, 70, .5);
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 1.5rem 0 .5rem 0;
+    height: 100%;
+    width: 100%;
+}
+
+.coffee-panel_item a:hover,
+.equipment-panel_item a:hover {
+    color: #D22226
+}

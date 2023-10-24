@@ -1,0 +1,151 @@
+.wrapper {
+    margin: 9.8rem auto 4rem;
+}
+
+.locations {
+    width: 100%;
+    margin: 2rem 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(6, 14.28%);
+    grid-template-areas:
+        "locationsMenu locationsMenu locationsText locationsText locationsImg locationsImg locationsImg";
+    border-top: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: 'Knockout-27', sans-serif;
+    text-transform: uppercase;
+    color: rgba(70, 70, 70, .9);
+    width: 100%;
+    padding: 0 0 1rem 0;
+    letter-spacing: .03rem;
+}
+
+.breadcrumbs {
+    padding: 2rem 0;
+}
+
+h6 {
+
+    border-top: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+    padding: .33rem;
+    display: inline-block;
+}
+
+h6 a,
+h6 span {
+    font-size: .9rem;
+    color: rgba(70, 70, 70, .66);
+    text-decoration: none;
+    transition: .5s;
+}
+
+h6 i {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: rgba(70, 70, 70, .5);
+    cursor: default;
+    padding: .5rem;
+    transform: translateY(.1rem);
+}
+
+h6 a:hover {
+    color: #D22226;
+}
+
+.locations-img {
+    grid-area: locationsImg;
+    border-left: 1px solid rgba(70, 70, 70, .2);
+    position: relative;
+    overflow: hidden;
+}
+
+.locations-img img {
+    width: 100%;
+    /*position: absolute;*/
+    padding: 2.5rem 0 2.5rem 2.5rem;
+    /*top: 0;
+    left: 0;*/
+    display: none;
+}
+
+#locationsImg1 {
+    display: block;
+}
+
+.locations-menu {
+    grid-area: locationsMenu;
+    padding: 2.5rem 2.5rem 2.5rem 0;
+}
+
+.locations-texts {
+    grid-area: locationsText;
+    border-left: 1px solid rgba(70, 70, 70, .2);
+    position: relative;
+}
+
+.locations-text {
+    display: none;
+    /*position: absolute;
+    top: 0;
+    left: 0;*/
+    padding: 3rem 2.5rem 2.5rem 2.5rem;
+}
+
+#locationsText1 {
+    display: block;
+}
+
+.locations-text h4 {
+    font-size: 1rem;
+    color: rgba(70, 70, 70, .8);
+    text-transform: uppercase;
+    letter-spacing: .02rem;
+    padding: 0 0 1rem 0;
+}
+
+.locations-text p {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    padding-bottom: .66rem;
+}
+
+.locations-text p:last-child {
+    padding-bottom: 0;
+}
+
+.locations-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.location {
+    width: 100%;
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+    padding: 1rem;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.location:hover,
+.location.active,
+.active {
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, .2);
+    background-color: rgba(210, 34, 38, .02);
+}
+
+.location h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: .66rem 0;
+}
+
+.location p {
+    font-size: .9rem;
+    padding-bottom: .25rem;
+}
+

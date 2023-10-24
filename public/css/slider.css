@@ -1,0 +1,146 @@
+.slider {
+    width: 100%;
+    position: relative;
+    background-color: black;
+}
+
+.slide0 {
+    width: 100%;
+    opacity: 0;
+}
+
+.slide {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+.slide0 img,
+.slide img {
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+#slide2,
+#slide3 {
+    display: none;
+}
+
+.note-box {
+    background-color: #D22226;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 25%;
+    height: auto;
+    overflow: hidden;
+    transition-property: width, height;
+    transition: .5s;
+    transform: translate(-100%, 100%);
+}
+
+.note-box h3 {
+    font-size: 1.33rem;
+    color: white;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.note-box p {
+    font-size: .9rem;
+    line-height: 1.33rem;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.note-box a {
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 1);
+    padding: 1rem 0 0 0;
+    text-decoration: none;
+    transition: .5s;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.note-box a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 1px;
+    width: 0%;
+    background-color: rgba(255, 255, 255, 1);
+    transition: .5s;
+}
+
+.note-box a:hover:after {
+    width: 100%;
+}
+
+.plus-box {
+    position: absolute;
+    left: 0;
+    bottom: .2rem;
+    padding: .66rem;
+    background-color: #D22226;
+    cursor: pointer;
+    transition: .7s;
+}
+
+.plus-box i {
+    font-size: 1.2rem;
+    color: white;
+    transition: .5s;
+}
+
+.plus-box:hover > i {
+    transform: rotate(90deg);
+}
+
+.close-box {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: .66rem;
+    cursor: pointer;
+}
+
+.close-box i {
+    font-size: 1.2rem;
+    color: white;
+    transition: .5s;
+    transform: rotate(45deg);
+}
+
+.close-box:hover > i {
+    transform: rotate(135deg);
+}
+
+.pagination {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    z-index: 100;
+}
+
+.pagin {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+    cursor: pointer;
+    background: rgba(255, 255, 255, .8);
+    transition: .5s;
+}
+
+.pagin-active,
+.pagin:hover {
+    background-color: #D22226;
+}

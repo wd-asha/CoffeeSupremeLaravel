@@ -1,0 +1,74 @@
+.credit-card {
+    width: 66%;
+    margin: 0 auto;
+    padding: 5%;
+    background-color: #F4F4F4;
+    border: 1px solid rgba(200, 200, 200, .8);
+    border-radius: 6px;
+}
+
+.credit-form {
+    width: 100%;
+}
+
+.credit-form .credit-input {
+    width: 100%;
+    border: 1px solid rgba(70, 70, 70, .2);
+    border-radius: 4px;
+    padding: .66rem 1rem;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: .8rem;
+    line-height: .8rem;
+    outline: none;
+}
+
+.credit-span {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: .8rem;
+    line-height: .8rem;
+    padding: 0 0 .5rem 0;
+    display: inline-block;
+    color: rgba(80, 80, 80, 1);
+}
+
+.credit-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    padding: .66rem 0 1.33rem 0;
+}
+
+.credit-month {
+    width: 22%;
+}
+
+.credit-image {
+    width: 19%;
+}
+.credit-image img {
+    width: 100%;
+    transform: translateY(24%);
+}
+
+.credit-btn-box {
+    width: 100%;
+    margin: 1.66rem auto 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.credit-image-list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0 2px 1rem 0;
+}
+
+.credit-image-list img {
+    width: 15%;
+    margin-left: .5rem;
+}
+

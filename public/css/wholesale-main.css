@@ -1,0 +1,67 @@
+.wholesale {
+    width: 100%;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-areas:
+            "wholesaleLeft wholesaleRight wholesaleRight";
+}
+
+.wholesale-left {
+    grid-area: wholesaleLeft;
+    background-color: #D22226;
+    padding: 2.5rem;
+    align-items: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wholesale-left h3 {
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: .03rem;
+}
+
+.wholesale-left p {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    color: rgba(255, 255, 255, 1);
+    padding: .66rem 0;
+}
+
+.wholesale-left a {
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 1);
+    padding: 2rem 0 0 0;
+    text-decoration: none;
+    transition: .5s;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.wholesale-left a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 1px;
+    width: 0%;
+    background-color: rgba(255, 255, 255, 1);
+    transition: .5s;
+}
+
+.wholesale-left a:hover:after {
+    width: 100%;
+}
+
+.wholesale-right {
+    grid-area: wholesaleRight;
+}
+
+.wholesale-right img {
+    width: 100%;
+
+}

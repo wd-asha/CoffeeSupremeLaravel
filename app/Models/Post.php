@@ -1,0 +1,39 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Cviebrock\EloquentSluggable\Sluggable;
+use Illuminate\Database\Eloquent\Model;
+use App\Filters\QueryFilter;
+use Illuminate\Database\Eloquent\Builder;
+
+class Post extends Model
+{
+    use SoftDeletes;
+    use Sluggable;
+
+    protected $table = 'posts';
+    protected $guarded = [];
+
+    public function sluggable(): array
+    {
+        return [
+            'post_slug' => [
+                'source' => 'post_title'
+            ]
+        ];
+    }
+
+
+    public function rubric()
+    {
+        return $this->belongsTo(Rubric::class);
+    }
+
+    public function scopeFilter(Builder $builder, QueryFilter $filter){
+        return $filter->apply($builder);
+    }
+
+
+}

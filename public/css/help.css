@@ -1,0 +1,152 @@
+.breadcrumbs {
+    padding: 2rem 0;
+}
+
+h6 {
+
+    border-top: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+    padding: .33rem;
+    display: inline-block;
+}
+
+h6 a,
+h6 span {
+    font-size: .9rem;
+    color: rgba(70, 70, 70, .66);
+    text-decoration: none;
+    transition: .5s;
+}
+
+h6 i {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: rgba(70, 70, 70, .5);
+    cursor: default;
+    padding: .5rem;
+    transform: translateY(.1rem);
+}
+
+h6 a:hover {
+    color: #D22226;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: 'Knockout-27', sans-serif;
+    text-transform: uppercase;
+    color: rgba(70, 70, 70, .9);
+    width: 100%;
+    padding: 1rem 0 0 0;
+    letter-spacing: .03rem;
+}
+
+.helps {
+    width: 100%;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-areas:
+            "introduce faq1 faq2";
+    border-top: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+}
+
+.introduce {
+    grid-area: introduce;
+    padding: 2.5rem 2.5rem 2.5rem 0;
+}
+
+.faq1 {
+    grid-area: faq1;
+    padding: 2.5rem;
+    border-left: 1px solid rgba(70, 70, 70, .2);
+}
+.faq2 {
+    grid-area: faq2;
+    padding: 2.5rem;
+    border-left: 1px solid rgba(70, 70, 70, .2);
+}
+
+.introduce h4 {
+    font-size: 1.1rem;
+    color: rgba(70, 70, 70, .8);
+    text-transform: uppercase;
+    letter-spacing: .02rem;
+    padding: 0 0 2rem 0;
+}
+
+.faq1 h4,
+.faq2 h4 {
+    font-size: 1.66rem;
+    color: rgba(70, 70, 70, .8);
+    text-transform: uppercase;
+    letter-spacing: .02rem;
+    padding: 4rem 0 1rem 0;
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+    font-family: 'Knockout-27', sans-serif;
+}
+
+.faq1 h4:first-child,
+.faq2 h4:first-child {
+    padding-top: 0;
+}
+
+.introduce p,
+.faq-box p,
+.faq2 p {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    padding-bottom: .66rem;
+}
+
+.introduce p:last-child {
+    padding-bottom: 0;
+}
+
+.faq-box {
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+}
+
+.faq-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    cursor: pointer;
+    padding: .66rem 0;
+}
+
+.faq-title p {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    padding: .66rem 0;
+    transition: .5s;
+}
+
+.faq-title i {
+    font-size: 1rem;
+    color: rgba(70, 70, 70, .7);
+    cursor: pointer;
+    transition: .5s;
+    padding: .66rem 0;
+}
+
+.faq-content {
+    display: none;
+}
+
+.faq-content p {
+    font-size: .9rem;
+    padding: .33rem 0 1.66rem 0;
+}
+
+.chevron-open {
+    transform: rotate(180deg);
+}
+
+.faq-title:hover,
+.faq-title:hover i,
+.active {
+    color: #D22226;
+}
+

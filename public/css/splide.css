@@ -1,0 +1,184 @@
+.main-splide {
+    width: 66%;
+    padding-top: 3rem;
+    margin: 0 auto;
+}
+
+.splide__track {
+    margin-bottom: 10rem;
+}
+
+.splide__slide {
+    width: 100%;
+    position: relative;
+}
+
+.splide__slide img {
+    width: 100%;
+    height: auto;
+}
+
+.splide__pagination {
+    margin-bottom: -5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.splide__pagination li {
+    width: 10%;
+    transition: .5s;
+}
+
+.splide__pagination__page {
+    height: 3rem;
+    width: 100%;
+    border-radius: 0;
+    background-color: transparent;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.splide__pagination__page:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    color: black;
+    font-size: 1rem;
+    line-height: 3rem;
+    transition: .5s;
+}
+
+.count1:before {
+    content: "01";
+}
+.count2:before {
+    content: "02";
+}
+.count3:before {
+    content: "03";
+}
+.count4:before {
+    content: "04";
+}
+.count5:before {
+    content: "05";
+}
+.count6:before {
+    content: "06";
+}
+.count7:before {
+    content: "07";
+}
+.count8:before {
+    content: "08";
+}
+.count9:before {
+    content: "09";
+}
+.count10:before {
+    content: "10";
+}
+
+.splide__pagination__page:hover:before {
+    color: red;
+}
+
+.splide__pagination__page:after {
+    content: "";
+    counter-increment: item;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+}
+
+.splide__pagination__page.is-active {
+    transform: scale(1);
+    transition: .5s;
+    color: red;
+}
+
+.splide__pagination__page.is-active:before {
+    color: red;
+}
+
+.splide__pagination__page.is-active:after {
+    left: 0;
+    background-color: red;
+    transition: 1s;
+}
+
+.slide__textStart,
+.slide__text {
+    position: absolute;
+    left: 4%;
+    bottom: 7%;
+    padding: 2.5rem;
+    width: 40%;
+    opacity: 0;
+    transition: .5s;
+    transform: translateY(2rem);
+    backdrop-filter: blur(5px) saturate(180%);
+    -webkit-backdrop-filter: blur(5px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide__text_title,
+.slide__textStart_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.slide__text_title h4,
+.slide__textStart_title h4 {
+    font-family: 'Montserrat-Regular', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: rgba(0, 0, 0, .7);
+    letter-spacing: .04rem;
+    font-weight: 600;
+}
+.slide__text_title h3 {
+    font-family: 'Knockout-27', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.66rem;
+    line-height: 1.66rem;
+    color: rgba(0, 0, 0, .5);
+    letter-spacing: .08rem;
+    font-weight: 600;
+}
+
+.slide__text_caption,
+.slide__textStart_caption {
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: rgba(0, 0, 0, .8);
+    font-size: 1.2rem;
+    line-height: 1.66rem;
+    font-weight: 600;
+    padding: 1.33rem 0 1rem 0;
+}
+
+.slide__text_p,
+.slide__textStart_p {
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: rgba(0, 0, 0, .8);
+    font-size: .9rem;
+    line-height: 1.4rem;
+    padding: 0;
+}
+
+
+

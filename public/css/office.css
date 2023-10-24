@@ -1,0 +1,122 @@
+.wrapper {
+    margin: 9.8rem auto 4rem;
+}
+
+.office {
+    width: 100%;
+    margin: 2rem 0 0 0;
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-areas:
+        "officeText officeImg officeImg";
+    border-top: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: 'Knockout-27', sans-serif;
+    text-transform: uppercase;
+    color: rgba(70, 70, 70, .9);
+    width: 100%;
+    padding: 1rem 0 0 0;
+    letter-spacing: .03rem;
+}
+
+.breadcrumbs {
+    padding: 2rem 0;
+}
+
+h6 {
+
+    border-top: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+    padding: .33rem;
+    display: inline-block;
+}
+
+h6 a,
+h6 span {
+    font-size: .9rem;
+    color: rgba(70, 70, 70, .66);
+    text-decoration: none;
+    transition: .5s;
+}
+
+h6 i {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: rgba(70, 70, 70, .5);
+    cursor: default;
+    padding: .5rem;
+    transform: translateY(.1rem);
+}
+
+h6 a:hover {
+    color: #D22226;
+}
+
+.office-img {
+    grid-area: officeImg;
+    padding: 2.5rem 0 2.5rem 2.5rem;
+    border-left: 1px solid rgba(70, 70, 70, .2);
+}
+
+.office-img img {
+    width: 100%;
+}
+
+.office-text {
+    grid-area: officeText;
+    padding: 2.5rem 2.5rem 2.5rem 0;
+}
+
+.office-text h4 {
+    font-size: .8rem;
+    color: rgba(70, 70, 70, .8);
+    text-transform: uppercase;
+    letter-spacing: .02rem;
+    padding: 0 0 2rem 0;
+}
+
+.office-text p {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    padding: 0 0 .66rem 0;
+}
+
+.office-img p {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    padding: 0 0 1.66rem 0;
+}
+
+.office-text p:last-child,
+.office-img p:last-child {
+    padding-bottom: 0;
+}
+
+.office-text li {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    padding-bottom: .66rem;
+    margin-left: 1rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: rgba(70, 70, 70, .8);
+    text-transform: uppercase;
+    letter-spacing: .02rem;
+    padding: 0 0 .66rem 0;
+}
+
+h5 {
+    font-size: .9rem;
+    color: rgba(70, 70, 70, .8);
+    text-transform: uppercase;
+    letter-spacing: .02rem;
+    padding: 0 0 .66rem 0;
+}
+
+

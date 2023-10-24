@@ -1,0 +1,193 @@
+.wrapper {
+    margin: 9.8rem auto 2.5rem;
+}
+
+.breadcrumbs {
+    padding: 2rem 0;
+}
+
+h6 {
+
+    border-top: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+    padding: .33rem;
+    display: inline-block;
+}
+
+h6 a,
+h6 span {
+    font-size: .9rem;
+    color: rgba(70, 70, 70, .66);
+    text-decoration: none;
+    transition: .5s;
+}
+
+h6 i {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: rgba(70, 70, 70, .5);
+    cursor: default;
+    padding: .5rem;
+    transform: translateY(.1rem);
+}
+
+h6 a:hover {
+    color: #D22226;
+}
+
+.login {
+    width: 100%;
+    margin: 2rem 0 0 0;
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-areas:
+        "loginImg loginImg loginForm";
+    border-top: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: 'Knockout-27', sans-serif;
+    text-transform: uppercase;
+    color: rgba(70, 70, 70, .9);
+    width: 100%;
+    padding: 0 0 2rem 0;
+    letter-spacing: .03rem;
+}
+
+.login-img {
+    grid-area: loginImg;
+    padding: 2.5rem 2.5rem 2.5rem 0;
+}
+
+.login-img img {
+    width: 100%;
+}
+
+.login-form {
+    grid-area: loginForm;
+    padding: 2.5rem;
+    border-left: 1px solid rgba(70, 70, 70, .2);
+}
+
+.form-control {
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+    position: relative;
+}
+
+.form-control input {
+    color: rgba(70, 70, 70, 1);
+    width: 100%;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: .9rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+}
+
+.form-control input:focus {
+    border-bottom: 1px solid #D22226;
+}
+
+.form-control:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(70, 70, 70, .2);
+    transition: .5s;
+}
+
+.forgot {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.forgot a {
+    line-height: 3rem;
+    font-size: .9rem;
+    color: rgba(70, 70, 70, .9);
+    transition: .5s;
+}
+
+.forgot a:hover {
+    color: #D22226;
+}
+
+.btn-box {
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.product_btn_back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(210, 34, 38, 1);
+    transition: .5s;
+    z-index: -1;
+    cursor: pointer;
+}
+
+.product_btn {
+    box-sizing: border-box;
+    width: 100%;
+    padding: .66rem 0;
+    text-transform: uppercase;
+    font-size: .9rem;
+    line-height: 1.2rem;
+    color: rgba(210, 34, 38, 1);
+    transition: .5s;
+    display: inline-block;
+    border: 1px solid rgba(210, 34, 38, 1);
+    text-align: center;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    letter-spacing: .02rem;
+}
+
+.login-link {
+    box-sizing: border-box;
+    width: 100%;
+    padding: .66rem 0;
+    text-transform: uppercase;
+    font-size: .9rem;
+    line-height: 1.2rem;
+    color: rgba(210, 34, 38, 1);
+    transition: .5s;
+    display: inline-block;
+    border: 1px solid rgba(210, 34, 38, 1);
+    text-align: center;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    letter-spacing: .02rem;
+    background-color: transparent;
+    font-family: 'Montserrat-Regular', sans-serif;
+    cursor: pointer;
+}
+
+.login-form p,
+.login-form p a {
+    font-size: .9rem;
+    color: rgba(70, 70, 70, .9);
+}
+
+.login-form p a {
+    transition: .5s;
+}
+
+.login-form p a:hover {
+    color: #D22226;
+}
+

@@ -1,0 +1,228 @@
+.latest-posts {
+    width: 100%;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-areas:
+            "allPosts latest latest"
+            "post  post   post";
+    border-top: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+}
+
+.allPosts {
+    grid-area: allPosts;
+    padding: 2.5rem;
+}
+
+.allPosts a {
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .5s;
+    color: rgba(70, 70, 70, 1);
+    letter-spacing: .03rem;
+}
+
+.allPosts a i {
+    font-size: 1.1rem;
+    color: rgba(70, 70, 70, .66);
+    margin-left: .5rem;
+    transition: .5s;
+}
+
+.allPosts a:hover {
+    color: #D22226;
+}
+
+.allPosts a:hover .myfa {
+    color: #D22226;
+    margin-left: 1rem;
+}
+
+.allPosts p {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    color: rgba(70, 70, 70, 1);
+    padding-top: .5rem;
+}
+
+.latest {
+    grid-area: latest;
+    padding: 2.5rem;
+    border-left: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+}
+
+.latest h3 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: rgba(70, 70, 70, 1);
+    letter-spacing: .03rem;
+}
+
+.latest p {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    color: rgba(70, 70, 70, 1);
+    padding-top: .5rem;
+}
+
+.latest a {
+    font-size: 1rem;
+    color: #D22226;
+    padding: 2rem 0 0 0;
+    text-decoration: none;
+    transition: .5s;
+    display: inline-block;
+    position: relative;
+}
+
+.latest a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 1px;
+    width: 0%;
+    background-color: #D22226;
+    transition: .5s;
+}
+
+.latest a:hover:after {
+    width: 100%;
+}
+
+.posts {
+    grid-area: post;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.post {
+    width: 33.33%;
+    padding: 2.5rem;
+    transition: .5s;
+    border-left: 1px solid rgba(70, 70, 70, .2);
+}
+
+.post:first-child {
+    border-top: 1px solid rgba(70, 70, 70, .2);
+    border-left: none;
+}
+
+.post-img {
+    width: 100%;
+    transition: .5s;
+}
+
+.post-img img {
+    width: 100%;
+}
+
+.post-title {
+    font-family: 'Knockout-27', sans-serif;
+    color: rgba(70, 70, 70, 1);
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    text-align: left;
+    letter-spacing: .04rem;
+    font-weight: 300;
+    padding: 2rem 0;
+    transition: .5s;
+}
+
+.post:hover {
+    background-color: rgba(210, 34, 38, .02);
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, .2);
+}
+
+.post:hover .post-title {
+    color: #D22226;
+}
+
+.post:hover .post-img {
+    filter: sepia(50%);
+}
+
+.post a {
+    text-decoration: none;
+}
+
+.post-text_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-text_header_left,
+.post-text_header_right {
+    width: 50%;
+    text-align: left;
+    font-family: 'knockout', sans-serif;
+    font-size: .7rem;
+    color: rgba(70, 70, 70, .8);
+    padding: 1rem 0;
+    text-transform: uppercase;
+    border-top: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+}
+.post-text_header_right {
+    border-left: 1px solid rgba(70, 70, 70, .2);
+    padding-left: 1rem;
+}
+
+/*.post-content .post-text {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    color: rgba(70, 70, 70, 1);
+    padding: 0 0 1rem 0;
+    text-align: left;
+}*/
+
+.post-content .post-text {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    color: rgba(70, 70, 70, 1);
+    padding: 1rem 0;
+    text-align: left;
+}
+
+.post-content span,
+.post-content a {
+    font-size: .9rem;
+    color: #D22226;
+    padding: 1rem 0;
+    display: inline-block;
+    transition: .5s;
+    cursor: pointer;
+    position: relative;
+}
+
+.post-content span:before,
+.post-content a:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: #D22226;
+    transition: .5s;
+    left: 0;
+    bottom: .9rem;
+}
+
+.post-content span:hover:before,
+.post-content a:hover:before {
+    width: 100%;
+}
+
+.post-content p {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    color: rgba(70, 70, 70, 1);
+    padding: 0 0 1rem 0;
+    text-align: left;
+}

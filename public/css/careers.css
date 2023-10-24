@@ -1,0 +1,161 @@
+.breadcrumbs {
+    padding: 2rem 0;
+}
+
+h6 {
+
+    border-top: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+    padding: .33rem;
+    display: inline-block;
+}
+
+h6 a,
+h6 span {
+    font-size: .9rem;
+    color: rgba(70, 70, 70, .66);
+    text-decoration: none;
+    transition: .5s;
+}
+
+h6 i {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: rgba(70, 70, 70, .5);
+    cursor: default;
+    padding: .5rem;
+    transform: translateY(.1rem);
+}
+
+h6 a:hover {
+    color: #D22226;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: 'Knockout-27', sans-serif;
+    text-transform: uppercase;
+    color: rgba(70, 70, 70, .9);
+    width: 100%;
+    padding: 1rem 0 0 0;
+    letter-spacing: .03rem;
+}
+
+.careers {
+    width: 100%;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-areas:
+            "work role person";
+    border-top: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+}
+
+.work {
+    grid-area: work;
+    padding: 2.5rem 2.5rem 2.5rem 0;
+}
+
+.role {
+    grid-area: role;
+    padding: 2.5rem;
+    border-left: 1px solid rgba(70, 70, 70, .2);
+}
+
+.person {
+    grid-area: person;
+    padding: 2.5rem 0 2.5rem 2.5rem;
+    border-left: 1px solid rgba(70, 70, 70, .2);
+}
+
+.work h4,
+.role h4,
+.person h4 {
+    font-size: 1rem;
+    color: rgba(70, 70, 70, .8);
+    text-transform: uppercase;
+    letter-spacing: .02rem;
+    padding: 0 0 1rem 0;
+}
+
+.work p,
+.role p,
+.person p {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    padding-bottom: .66rem;
+}
+
+.work li,
+.role li,
+.person li {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    padding-bottom: .66rem;
+    margin-left: 1rem;
+}
+
+.work p:last-child,
+.role p:last-child,
+.person p:last-child {
+    padding-bottom: 0;
+}
+
+.work img {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.btn-box {
+    width: 100%;
+    margin: 2.5rem auto 0 auto;
+}
+
+.product_btn_back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(210, 34, 38, 1);
+    transition: .5s;
+    z-index: -1;
+}
+
+.product_btn {
+    box-sizing: border-box;
+    width: 100%;
+    padding: .6rem 0;
+    text-transform: uppercase;
+    font-size: .8rem;
+    line-height: 1.2rem;
+    color: rgba(210, 34, 38, 1);
+    transition: .5s;
+    display: inline-block;
+    border: 1px solid rgba(210, 34, 38, 1);
+    text-align: center;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-cart {
+    box-sizing: border-box;
+    width: 100%;
+    padding: .6rem 0;
+    text-transform: uppercase;
+    font-size: .8rem;
+    line-height: 1.2rem;
+    background-color: rgba(210, 34, 38, 1);
+    transition: .5s;
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+}

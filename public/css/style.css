@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'knockout'; /* Имя шрифта */
+    src: url(../fonts/knockout.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: 'Knockout-27'; /* Имя шрифта */
+    src: url(../fonts/Knockout-27.otf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular'; /* Имя шрифта */
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    position: relative;
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 9.8rem auto 4rem;
+    padding: 0 2rem;
+    position: relative;
+}
+
+#overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    z-index: 100;
+}
+
+#overlaySearch {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 99vw;
+    height: 100vh;
+    background-color: #D22226;
+    display: none;
+    z-index: 200;
+    overflow-y: hidden;
+}
+
+#searchClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+#searchClose i {
+    font-size: 2rem;
+    color: white;
+    transition: .5s;
+    padding: 2rem;
+}
+
+#searchClose i:hover {
+    opacity: .8;
+}
+
+#overlaySearch input {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    background-color: transparent;
+    padding: .66rem .33rem;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .7);
+    outline: none;
+    width: 33.33%;
+}

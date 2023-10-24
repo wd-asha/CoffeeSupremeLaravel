@@ -1,0 +1,271 @@
+:root {
+    --swiper-navigation-size: 1.66rem !important;
+}
+
+.main {
+    width: 100%;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-areas:
+    ".         subscriptLeft    subscriptLeft"
+    "espresso  espressoContent  espressoContent"
+    "bench     benchContent     benchContent"
+    "filter    filterContent    filterContent"
+    "equipment equipmentContent equipmentContent"
+    "filters   filtersContent   filtersContent";
+    border-top: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+}
+
+.subscriptLeft {
+    grid-area: subscriptLeft;
+    padding: 2.5rem;
+    border-left: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+}
+
+.subscriptLeft h3 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: rgba(70, 70, 70, 1);
+    letter-spacing: .03rem;
+    padding-bottom: .33rem;
+}
+
+.subscriptLeft p {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    color: rgba(70, 70, 70, 1);
+    padding-top: .66rem;
+}
+
+.bench {
+    grid-area: bench;
+}
+
+.espresso {
+    grid-area: espresso;
+}
+
+.filter {
+    grid-area: filter;
+}
+
+.equipment {
+    grid-area: equipment;
+}
+
+.filters {
+    grid-area: filters;
+}
+
+.bench,
+.espresso,
+.filter,
+.equipment,
+.filters {
+    border-top: 1px solid rgba(70, 70, 70, .2);
+    padding: 2.5rem;
+}
+
+.bench a,
+.espresso a,
+.filter a,
+.equipment a,
+.filters a {
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .5s;
+    color: rgba(70, 70, 70, 1);
+    letter-spacing: .03rem;
+}
+
+.bench a i,
+.espresso a i,
+.filter a i,
+.equipment a i,
+.filters a i {
+    font-size: 1.1rem;
+    color: rgba(70, 70, 70, .66);
+    margin-left: .5rem;
+    transition: .5s;
+}
+
+.bench a:hover,
+.espresso a:hover,
+.filter a:hover,
+.equipment a:hover,
+.filters a:hover {
+    color: #D22226;
+}
+
+.bench a:hover .myfa,
+.espresso a:hover .myfa,
+.filter a:hover .myfa,
+.equipment a:hover .myfa,
+.filters a:hover .myfa {
+    color: #D22226;
+    margin-left: 1rem;
+}
+
+.bench p,
+.espresso p,
+.filter p,
+.equipment p,
+.filters p {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    color: rgba(70, 70, 70, 1);
+    padding-top: 1rem;
+}
+
+.benchContent {
+    grid-area: benchContent;
+}
+
+.espressoContent {
+    grid-area: espressoContent;
+}
+
+.filterContent {
+    grid-area: filterContent;
+}
+
+.equipmentContent {
+    grid-area: equipmentContent;
+}
+
+.filtersContent {
+    grid-area: filtersContent;
+}
+
+/*.benchContent,*/
+/*.espressoContent,*/
+.filterContent,
+.equipmentContent {
+    border-left: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.espressoContent,
+.benchContent {
+    border-left: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    padding: 1.33rem .8rem !important;
+    color: #c79064 !important;
+    border: 1px solid #c79064 !important;
+    width: .33rem !important;
+}
+
+.filtersContent {
+    border-left: 1px solid rgba(70, 70, 70, .2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bench-item_title,
+.espresso-item_title,
+.filter-item_title,
+.equipment-item_title,
+.filters-item_title {
+    font-family: 'Knockout-27', sans-serif;
+    color: rgba(70, 70, 70, 1);
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    text-align: center;
+    letter-spacing: .02rem;
+    font-weight: 300;
+    transition: .5s;
+}
+
+.equipment-item,
+.filters-item {
+    width: 33.33%;
+    padding: 2.5rem;
+    transition: .5s;
+}
+
+.filter-item,
+.bench-item,
+.espresso-item {
+    width: 100%;
+    padding: 2.5rem;
+    transition: .5s;
+}
+
+.bench-item:hover,
+.espresso-item:hover,
+.filter-item:hover,
+.equipment-item:hover,
+.filters-item:hover {
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, .2);
+    background-color: rgba(210, 34, 38, .02);
+}
+
+.bench-item:hover .bench-item_title,
+.espresso-item:hover .espresso-item_title,
+.filter-item:hover .filter-item_title,
+.equipment-item:hover .equipment-item_title,
+.filters-item:hover .filters-item_title {
+    color: #D22226;
+}
+
+.bench-item a,
+.espresso-item a,
+.filter-item a,
+.equipment-item a,
+.filters-item a {
+    text-decoration: none;
+}
+
+.bench-item_img,
+.espresso-item_img,
+.filter-item_img,
+.equipment-item_img,
+.filters-item_img {
+    width: 100%;
+}
+
+.bench-item_img img,
+.espresso-item_img img,
+.filter-item_img img,
+.equipment-item_img img,
+.filters-item_img img {
+    width: 100%;
+}
+
+.bench-item_text,
+.espresso-item_text,
+.filter-item_text,
+.equipment-item_text,
+.filters-item_text {
+    font-size: .9rem;
+    color: rgba(70, 70, 70, 1);
+    text-align: center;
+    padding: .5rem 0;
+}
+
+.bench-item_price,
+.espresso-item_price,
+.filter-item_price,
+.equipment-item_price,
+.filters-item_price {
+    font-size: 1rem;
+    color: rgba(70, 70, 70, 1);
+    text-align: center;
+    padding: .5rem 0;
+}

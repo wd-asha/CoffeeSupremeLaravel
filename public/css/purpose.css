@@ -1,0 +1,77 @@
+.post-purpose {
+    width: 100%;
+    margin: 2rem 0 0 0;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-areas:
+        "postTitle postText1 postText2";
+    border-top: 1px solid rgba(70, 70, 70, .2);
+    border-bottom: 1px solid rgba(70, 70, 70, .2);
+}
+
+.not-mt {
+    margin: 0;
+    border-top: none;
+}
+
+.post-title-purpose {
+    grid-area: postTitle;
+    padding: 2.5rem 2.5rem 2.5rem 0;
+}
+
+.post-text1-purpose {
+    grid-area: postText1;
+    padding: 2.5rem;
+    border-left: 1px solid rgba(70, 70, 70, .2);
+}
+
+.post-text2-purpose {
+    grid-area: postText2;
+    padding: 2.5rem 0 2.5rem 2.5rem;
+    border-left: 1px solid rgba(70, 70, 70, .2);
+}
+
+.post-img-purpose {
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.post-img-purpose img {
+    width: 100%;
+}
+
+.bolding-purpose {
+    grid-area: postText1;
+    padding: 2.5rem;
+    border-left: 1px solid rgba(70, 70, 70, .2);
+}
+
+.bolding-purpose p {
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    padding-bottom: 1rem;
+}
+
+.post-title-purpose h4,
+.post-text1-purpose h4,
+.post-text2-purpose h4 {
+    font-family: 'Knockout-27', sans-serif;
+    color: rgba(70, 70, 70, 1);
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    text-align: left;
+    letter-spacing: .04rem;
+    font-weight: 300;
+    padding: 0 0 1rem 0;
+    transition: .5s;
+}
+
+.post-title-purpose p,
+.post-text1-purpose p,
+.post-text2-purpose p {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    padding-bottom: .66rem;
+}
+
