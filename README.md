@@ -12,6 +12,8 @@ Apache 2.4 or higher.</p>
 <p>4. Run the command in the console from the project folder:<br>
 <i>composer install --optimize-autoloader --no-dev</i></p>
 <p>5. Run the command in the console from the project folder:<br>
+<i>php artisan key:generate</i></p>
+<p>6. Run the command in the console from the project folder:<br>
 <i>php artisan storage:link</i></p>
 <p>Site address on your local computer:<br>
 <i>localhost:8000</i></p>
