@@ -8,6 +8,7 @@ use App\Models\User;
 use App\Models\Coffee;
 use App\Models\Equipment;
 use App\Models\Subscriber;
+use Illuminate\Support\Facades\Auth;
 
 class PasswordResetController extends Controller
 {

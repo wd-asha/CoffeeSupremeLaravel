@@ -1,4 +1,5 @@
 <h4>Coffee Supreme v.2.0</h4>
+<p>To test the program, you will need a installing composer on your local computer</p>
 <p>To test the program, you will need a running web server (for example, an OpenServer) on your local computer</p>
 <p>System requirements:<br>
 PHP 8.0 or higher;<br>
@@ -9,9 +10,9 @@ Apache 2.4 or higher.</p>
 <p>2. Create a database <i>supreme</i> in MySQL</p>
 <p>3. Import data from <i>supreme.sql</i> file into database</p>
 <p>4. Run the command in the console from the project folder:<br>
-<i>composer install</i></p>
+<i>composer install --optimize-autoloader --no-dev</i></p>
 <p>5. Run the command in the console from the project folder:<br>
-<i>storage:link</i></p>
+<i>php artisan storage:link</i></p>
 <p>Site address on your local computer:<br>
 <i>localhost:8000</i></p>
 <p>Administrator login: <i>admin@gmail.com</i><br>Administrator password: <i>rootadmin</i></p>
