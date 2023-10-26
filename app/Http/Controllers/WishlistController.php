@@ -9,7 +9,7 @@ use App\Models\SubCategory;
 use App\Models\Subscriber;
 use App\Models\User;
 use App\Models\Order;
-use App\Models\WishList;
+use App\Models\Wishlist;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;

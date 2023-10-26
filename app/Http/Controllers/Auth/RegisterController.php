@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Coffee;
 use App\Models\Equipment;
+use App\Models\SubCategory;
 
 class RegisterController extends Controller
 {
@@ -85,6 +86,7 @@ class RegisterController extends Controller
     {
         $coffees = Coffee::all();
         $equipments = Equipment::all();
-        return view ('front.register', compact('coffees', 'equipments'));
+        $subcategories = SubCategory::all();
+        return view ('front.register', compact('coffees', 'equipments', 'subcategories'));
     }
 }
